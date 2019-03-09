@@ -2,8 +2,8 @@
 	define('PATH', dirname(__FILE__));
 	spl_autoload_register('AutoLoader');
 
-	function AutoLoader($className) {
-		$file = str_replace('\\', '/', $className);
+	function AutoLoader($class) {
+		$file = str_replace('\\', '/', $class);
 		
 		if(file_exists(PATH . '/' . $file . '.php')) {
 			require_once(PATH . '/' . $file . '.php');

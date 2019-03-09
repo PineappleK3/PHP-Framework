@@ -15,7 +15,7 @@ use Google\Protobuf\Internal\GPBWrapperUtils;
 class RegistrationRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>.RequestType type = 1;</code>
+     * Generated from protobuf field <code>.registration.RequestType type = 1;</code>
      */
     private $type = 0;
     /**
@@ -104,7 +104,7 @@ class RegistrationRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.RequestType type = 1;</code>
+     * Generated from protobuf field <code>.registration.RequestType type = 1;</code>
      * @return int
      */
     public function getType()
@@ -113,13 +113,13 @@ class RegistrationRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.RequestType type = 1;</code>
+     * Generated from protobuf field <code>.registration.RequestType type = 1;</code>
      * @param int $var
      * @return $this
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \RequestType::class);
+        GPBUtil::checkEnum($var, \Registration\RequestType::class);
         $this->type = $var;
 
         return $this;
